@@ -170,6 +170,9 @@ p{
     padding:20px;
     text-align: justify;
 }
+p.selection{
+    text-align:center;
+}
 .product_intro{
     width:800px;
     margin:auto;
