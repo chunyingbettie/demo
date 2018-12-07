@@ -53,7 +53,7 @@ a.skip-main:focus, a.skip-main:active {
     color:grey;
 }
 .menu{
-    color:grey;
+    color:black;
     /* display:flex;
     justify-content: center; */
     padding-inline-start: 0px;
@@ -63,14 +63,14 @@ a.skip-main:focus, a.skip-main:active {
 }
 
 .item-link{
-    color:grey;
+    color:black;
     padding: 20px;
     list-style:none;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
 }
 .underline_link{
-    color:grey;
+    color:black;
     padding: 20px;
     list-style:none;
     font-family: Arial, Helvetica, sans-serif;
