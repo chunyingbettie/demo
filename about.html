@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <title>Betty Zhang</title>
+    <link rel="stylesheet" type="text/css" href="home.css"/>
+    <link rel="stylesheet" type="text/css" href="responsive.css">
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <script>
+            function changeToBlink(){
+                var imageElement = document.getElementById("profile_img");
+                imageElement.src = "images/page1/hover.jpg";
+                imageElement.alt = "a girl blinking eyes";
+            }
+            function changeToNormal(){
+                var imageElement = document.getElementById("profile_img");
+                imageElement.src = "images/page1/1.1.jpg";
+                imageElement.alt = "agirl opening eyes";
+            }
+            function check(){
+                var name=document.getElementById("name");
+                var email=document.getElementById("email");
+                var message=document.getElementById("message");
+                if (name==null||name.value==""||email==null||email.value==""||message==null||message.value=="")
+                {
+                    alert("please fill in the columns");
+                    return false;
+                }
+                else return true;
+            }
+    </script>
+</head>
+<body>
+        <header>
+        <a class="skip-main" href="#main">Skip to main content</a>
+        <div class="myself">
+        <img class="portrait" src = "images/page1/1.1.jpg" id="profile_img" alt="agirl opening eyes" onmouseover= "changeToBlink()" onmouseout="changeToNormal()">
+        </div>
+        </header>
+    <div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html" class="item-link">Design projects</a></li>
+                <li><a href="illustration.html" class="item-link">Illustrations</a></li>
+                <li><a href="about.html" class="underline_link">About me</a></li>
+                <li><a href="helloUM.html" class ="item-link">Hello UM</a></li>
+            </ul>       
+        </nav>
+    </div>
+
+    <div class="designer" id="main" tabindex="-1"><img class="self-pic" src = images/page4/4.2.jpg alt=""></div>
+    
+    <div class="product_intro">
+        <hr/>
+         <p class="selfintro">Chunying was born and raised in China. She obtained her bachelor and master degree of law in Beihang University and University College London, after which she worked as a legal counsel in the largest Trust fund of China, Citic Trust Co.. During her participation in a company project related to trust law legal research, she helped design the legal research website where she dug her passion regarding UX design. She is now a first-year graduate of MSI program at University of Michigan with a focus on UX Design and wishes to bring more technology and aesthetic sides of her. </p>
+        <hr/>
+        <p class="intro">Contact me</p>
+        <p class="intro">Feel free to reach out, let’s bring more design sparkles.</p>
+    </div>
+        <div class="contactinfo">
+            <form class="form" action="mailto:zhcy@umich.com" method="post" enctype="text/plain" onsubmit="return check()">
+                <input type="text" name="name" id="name" placeholder="Name">
+                <input type="email" name="email" id="email" placeholder="Email">
+                <textarea placeholder="Message"></textarea>
+                <input type="submit" name="message" value="Send" id="message">
+            <br>
+            </form>
+        </div>
+  
+<footer>Copyright &copy; Chunying Zhang</footer>
+</body>
+</html>
